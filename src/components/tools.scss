@@ -1,0 +1,30 @@
+.paint-tool-container {
+  border-right: 1px solid gray;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .paint-tool__item,
+  .paint-tool__item--pressed {
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+      transition: transform 0.9s;
+    }
+
+    &:active {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+  }
+
+  .paint-tool__item--pressed {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+  }
+}

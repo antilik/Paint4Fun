@@ -1,0 +1,38 @@
+.canvas-resize-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-right: 1px solid gray;
+
+  .canvas-resize__width {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .canvas-resize__error-message {
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    padding: 3px;
+    background-color: #f2f2f2;
+    color: #ff0000;
+    font-size: 12px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: transform 0.9s;
+  }
+  .canvas-resize__btn {
+    margin-left: 10px;
+    margin-right: 15px;
+    padding: 4px;
+
+    &:hover {
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+      transition: transform 0.9s;
+    }
+
+    &:active {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+  }
+}
