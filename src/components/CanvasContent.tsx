@@ -15,8 +15,6 @@ interface ICanvasState {
   isDrawing: boolean;
   offsetX: number;
   offsetY: number;
-  startX: number;
-  startY: number;
 }
 
 const CanvasContent = ({
@@ -28,8 +26,6 @@ const CanvasContent = ({
     isDrawing: false,
     offsetX: 0,
     offsetY: 0,
-    startX: 0,
-    startY: 0,
   });
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
